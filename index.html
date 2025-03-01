@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OptiRank</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="/node_modules/owl.carousel/dist/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/bower_components/owl.carousel/dist/assets/owl.carousel.min.css"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter+Tight&family=Josefin+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap");
+    </style>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter+Tight&family=Josefin+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap");
+    </style>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+    </style>
+
+    <link rel="stylesheet" href="blobz.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link rel="stylesheet" href="icofont/icofont/icofont.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="icofont/icofont/icofont.min.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <script src="main.js"defer></script>
+  </head>
+  <body class="blob">
+    <div class="mobile-nav-border">
+
+    <nav class="navbar navbar-expand-md p-3  p-md-0 p-lg-1 " style="width: 100%;z-index : 999;
+   background: #fff;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img src="head-logo.png" class="head-logo" />
+          <span class="logo"><span class="big">Opti</span>Rank</span></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo01"
+          aria-controls="navbarTogglerDemo01"
+          style="border: none"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span
+            class="navbar-toggler-i"
+            style="
+              height: fit-content;
+              width: fit-content;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            "
+            ><i class="fa-solid fa-bars toggle"></i
+          ></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <ul class="navbar-nav navbar-scroll ms-auto mb-2 mb-lg-0 ">
+            <li class="nav-item m-2 m-md-0 mt-md-2 m-lg-2">
+              <a class="nav-link" aria-current="page" href="#" id="active"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item m-2 m-md-0 mt-md-2 m-lg-2">
+              <a class="nav-link" href="about-us.html">Aboutus</a>
+            </li>
+            <li class="nav-item m-2 m-md-0 mt-md-2 m-lg-2">
+              <a class="nav-link" href="services.html">Services <i class="fa-solid fa-plus nav-icon"></i></a>
+              <div class="nav-hover">
+                <a href="services.html" class="nav-hover-link nav-hover-first">Services</a>
+                <a href="service-detail.html" class="nav-hover-link">Services-details</a>
+              </div>
+            </li>
+            <li class="nav-item m-2 m-md-0 mt-md-2 m-lg-2">
+              <a class="nav-link" href="project.html">Projects <i class="fa-solid fa-plus nav-icon"></i></a>
+              <div class="nav-hover">
+                <a href="project.html" class="nav-hover-link nav-hover-first">projects</a>
+                <a href="project-2.html" class="nav-hover-link">projects 2</a>
+                <a href="project-detail.html" class="nav-hover-link">projects details</a>
+              </div>
+            </li>
+            <li class="nav-item m-2 m-md-0 mt-md-2 m-lg-2">
+              <a class="nav-link" href="blog.html">Blog <i class="fa-solid fa-plus nav-icon"></i></a>
+              <div class="nav-hover">
+                <a href="blog.html" class="nav-hover-link nav-hover-first">Blog</a>
+                <a href="blog-detail.html" class="nav-hover-link">Blog Details</a>
+              </div>
+            </li>
+            <li class="nav-item m-2 m-md-0 mt-md-2 m-lg-2">
+              <a class="nav-link" href="#">Pages <i class="fa-solid fa-plus nav-icon"></i></a>
+              <div class="nav-hover">
+                <a href="features.html" class="nav-hover-link nav-hover-first">features</a>
+                <a href="team.html" class="nav-hover-link">team</a>
+                <a href="pricing.html" class="nav-hover-link">Pricing</a>
+                <a href="faq.html" class="nav-hover-link">faq</a>
+                <a href="error.html" class="nav-hover-link">404 ERROR</a>
+               
+              </div>
+            </li>
+            <li class="nav-item m-2 m-md-0 mt-md-2 m-lg-2">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+          <div class="ms-auto nav-right">
+            <button class="search-button">
+              <span class="search-button-txt"> Get Started</span>
+            </button>
+            
+            <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+            
+          </div>
+        </div>
+      </div>
+    </nav>
+    </div>
+  
+    <div class="wrapper">
+      <div class="child1">
+        <div class="child-cont">
+          <br />
+          <h1 class="gradient">
+            Expert SEO Services by <span class="blackpast">OptiRank</span>
+          </h1>
+          <br />
+          <h4 class="container-main">
+            OptiRank boosts online visibility through tailored SEO strategies,
+            covering audits, keywords, content, and technical enhancements,
+            ensuring sustained digital success.<a href="" class="main-link">
+              Home</a
+            >,<a href="" class="main-link"> About</a>, and
+            <a href="" class="main-link"> FAQ.</a>
+          </h4>
+          <br />
+          <div class="container">
+            <div class="row align-items-start gap-1 row-gap-3">
+              <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                <button class="discover" type="button" onclick="location.href='about-us.html'"><span class="discover-txt">explore</span></button>
+              </div>
+              <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-5">
+                <button class="FAQ" type="button" onclick="videoShow()"><span class="FAQ-txt"> watch video <i class="fa-regular fa-circle-play faq-icon"></i></span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="child-2">
+        <img src="CHILD-2-IMG.png" alt="" class="child-2-img img-fluid" />
+        <div class="child-2-cont"></div>
+      </div>
+    </div>
+
+    <div class="video-popup" id="popup">
+      <iframe class="popup-video" src="https://www.youtube.com/embed/MYE6T_gd7H0?si=TCZ5pZjf9qmukRBJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <button class="videohide" onclick="videoHide()"><i class="fa-solid fa-xmark hide-icon"></i></button>
+    </div>
+
+    
+    <div class="container features">
+      <div class="row row-gap-5 features-box">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-5 feature-left">
+          <h2 class="feature-left-sub">Care Features</h2>
+          <h1 class="feature-left-head">
+            Create Awesome Service With Our Tools
+          </h1>
+          <p class="feature-left-main">
+            OptiRank, your go-to SEO agency, empowers your online presence with
+            state-of-the-art tools. Elevate your website's visibility, drive
+            organic traffic, and achieve unparalleled success with our expert
+            services. Choose OptiRank for an awesome SEO experience.
+          </p>
+          <div class="row" style="width: 100%">
+            <div class="col-12 col-lg-5">
+              <button class="details"><span class="details-txt"> More details</span></button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-7 container feature-right">
+          <div class="row row-gap-3">
+            <div class="col-12 col-md-6 col-lg-6">
+              <div class="feature-right-box first-box">
+                <div class="feature-box-img-border">
+                  <img src="consultancy.png" class="feature-box-img" alt="" />
+                </div>
+                <h2 class="feature-box-head">Seo consultancy</h2>
+                <p class="feature-box-main">
+                  OptiRank offers top-tier SEO consultancy, providing expert
+                  guidance for unparalleled online success.
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-6">
+              <div class="feature-right-box second-box">
+                <div class="feature-box-img-border">
+                  <img src="exploration.png" class="feature-box-img" alt="" />
+                </div>
+                <h2 class="feature-box-head">Competitor Analysis</h2>
+                <p class="feature-box-main">
+                  OptiRank's competitor analysis unveils key insights, ensuring
+                  your business stays ahead in the digital landscape.
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-6">
+              <div class="feature-right-box third-box">
+                <div class="feature-box-img-border">
+                  <img src="advertising.png" class="feature-box-img" alt="" />
+                </div>
+                <h2 class="feature-box-head">Social Media Marketing</h2>
+                <p class="feature-box-main">
+                  OptiRank offers top-tier SEO consultancy, providing expert
+                  guidance for unparalleled online success.
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-6">
+              <div class="feature-right-box fourth-box">
+                <div class="feature-box-img-border">
+                  <img src="content.png" class="feature-box-img" alt="" />
+                </div>
+                <h2 class="feature-box-head">Content Creation</h2>
+                <p class="feature-box-main">
+                  "OptiRank crafts compelling and SEO-optimized content that
+                  captivates audiences, driving organic engagement and enhancing
+                  online visibility."
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="conatiner text-align-center main-about">
+      <div class="row" style="overflow: hidden">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 left">
+          <img src="about-us.png" alt="" class="about-img" />
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 row-gap-1 right">
+          <h2 class="right-sub-head">About us</h2>
+          <h1 class="right-head">We are Dynamic Team of SEO Agency</h1>
+          <div class="right-main-txt">
+            "OptiRank, your digital catalyst, delivers tailored SEO solutions to
+            elevate online visibility and drive sustainable success."
+            <div class="right-main-txt-brief">
+              "OptiRank, a leading SEO agency, specializes in enhancing online
+              visibility through strategic optimization. With a focus on
+              tailored solutions, we propel businesses to new heights by
+              optimizing digital landscapes and driving organic growth. Choose
+              OptiRank for a dynamic and results-driven approach to SEO
+              excellence."
+            </div>
+          </div>
+          <div class="statistics">
+            <div class="projects-statistics">
+              <div class="number">1,165 <span class="plus">+</span></div>
+              <span class="number-text">projects completed</span>
+            </div>
+            <div class="client-statistics">
+              <div class="number">2,665 <span class="plus">+</span></div>
+              <span class="number-text">Satisfied Clients</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="services">
+      <div class="services-child2">
+        <h2 class="service-h3">services</h2>
+        <h1 class="service-heading">How We Can Help?</h1>
+        <br />
+        <div class="service-boxes">
+          <div class="box">
+            <div class="box-i">
+              <img src="discovery.png" class="box-icon" alt="" />
+            </div>
+            <div class="box-text">
+              <h2 class="box-h2 service-box-heading">
+                Discover More on current SEO Trends
+              </h2>
+              <p class="service-box-main">
+                OptiRank masters advanced SEO with AI, UX, and data for
+                top-notch outcomes..
+              </p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="box-i">
+              <img src="dashboard.png" class="box-icon" alt="" />
+            </div>
+            <div class="box-text">
+              <h2 class="box-h2">Real-Time Big Data Analysis</h2>
+              <p class="service-box-main">
+                Real-time big data swiftly powers instant decisions, crucial in
+                finance and cybersecurity.
+              </p>
+              <p></p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="box-i">
+              <img src="data-analysis.png" class="box-icon" alt="" />
+            </div>
+            <div class="box-text">
+              <h2 class="box-h2">Precise Data Analysis & Prediction</h2>
+              <p class="service-box-main">
+                Precise data analysis translates patterns into accurate
+                predictions with utmost reliability.
+              </p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="box-i">
+              <img src="social-media-marketing.png" class="box-icon" alt="" />
+            </div>
+            <div class="box-text">
+              <h2 class="box-h2">SEO Marketing & Social Media</h2>
+              <p class="service-box-main">
+                SEO and social media collaborate to boost content visibility,
+                engagement, and brand recognition online.
+              </p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="box-i">
+              <img src="search.png" class="box-icon" alt="" />
+            </div>
+            <div class="box-text">
+              <h2 class="box-h2">Local SEO Optimization</h2>
+              <p class="service-box-main">
+                Enhancing visibility in regional searches for increased local
+                business traffic.
+              </p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="box-i">
+              <img src="application.png" class="box-icon" alt="" />
+            </div>
+            <div class="box-text">
+              <h2 class="box-h2">Mobile SEO Strategy</h2>
+              <p class="service-box-main">
+                Optimizing websites for seamless mobile experiences and higher
+                mobile search rankings.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container choose-us" style="width: 90%">
+      <div
+        class="row row-gap-5"
+        style="width: 100%; height: fit-content; margin-top: 10dvh"
+      >
+        <div class="col-12 col-lg-5 choose-us-left">
+          <h2 class="choose-us-sub">Why choose us</h2>
+          <h1 class="choose-us-head">Outstanding Digital Experience</h1>
+          <div class="choose-us-txt">
+            "Choose OptiRank for unparalleled SEO expertise, driving your online
+            presence to new heights with strategic optimization and proven
+            results."
+          </div>
+          <div class="choose-us-key-points">
+            <div class="key-point">
+              <div class="key-left">
+                <i class="fa-solid fa-check key-icon"></i>
+              </div>
+              <div class="key-right">
+                <span class="key-right-head">First Working Process</span
+                ><span class="key-right-main"
+                  >Conduct comprehensive website analysis to identify key SEO
+                  opportunities and tailor a customized optimization
+                  strategy.</span
+                >
+              </div>
+            </div>
+            <div class="key-point">
+              <div class="key-left">
+                <i class="fa-solid fa-check key-icon"></i>
+              </div>
+              <div class="key-right">
+                <span class="key-right-head">Dedicated Team Member</span
+                ><span class="key-right-main"
+                  >Assigned specialist ensures personalized attention,
+                  implementing tailored strategies for optimal SEO performance
+                  and continuous improvement.</span
+                >
+              </div>
+            </div>
+            <div class="key-point">
+              <div class="key-left">
+                <i class="fa-solid fa-check key-icon"></i>
+              </div>
+              <div class="key-right">
+                <span class="key-right-head">24/7 Support</span
+                ><span class="key-right-main"
+                  >Round-the-clock assistance for seamless support, ensuring
+                  your queries are addressed promptly and effectively, day or
+                  night.</span
+                >
+              </div>
+            </div>
+            <div class="choose-us-btn">
+              <button class="chooseus-btn"><span class="chooseus-btn-txt">Discover more</span></button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-7">
+          <img src="why-choose-us.jpg" alt="" class="choose-us-img" />
+        </div>
+      </div>
+    </div>
+
+    <div class="projects">
+      <div class="heading">
+        <h2 class="heading-h4">Projects</h2>
+        <h1 class="heading-h1">our projects for client</h1>
+        <br />
+      </div>
+
+      <div class="projects-section">
+        <div class="projects-box">
+          <img src="project-img.jpg" alt="" class="project-img" />
+          <div class="project-hover">Branding</div>
+        </div>
+        <div class="projects-box">
+          <img src="project-img-2.jpg" alt="" class="project-img" />
+          <div class="project-hover">Marketing</div>
+        </div>
+        <div class="projects-box">
+          <img src="project-img-3.jpg" alt="" class="project-img" />
+          <div class="project-hover">SEO</div>
+        </div>
+        <div class="projects-box">
+          <img src="project-img-4.jpg" alt="" class="project-img" />
+          <div class="project-hover">Web design</div>
+        </div>
+        <div class="projects-box">
+          <img src="project-img-5.jpg" alt="" class="project-img" />
+          <div class="project-hover">Web developement</div>
+        </div>
+        <div class="projects-box">
+          <img src="project-img-6.jpg" alt="" class="project-img" />
+          <div class="project-hover">Digital marketing</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="team">
+      <div class="team-headings">
+        <h2 class="team-sub-head">Team</h2>
+        <h1 class="team-main-head">Meet our team</h1>
+      </div>
+      <div class="row row-gap-5 team-boxes" style="width: 100%">
+        <div class="col-12 col-sm-12 col-md-3 col-lg-3 p-0 team-box">
+          <div class="team-box-img-box">
+            <img src="ceo.jpg" alt="" class="team-box-img" />
+          </div>
+          <div class="team-box-text">
+            <h2 class="team-box-text-h2">Edward Bold</h2>
+            <h4 class="team-box-text-h4">CEO & Founder</h4>
+            <div class="social-media">
+              <div class="social-media-box"><i class="fa-brands fa-linkedin-in social-media-icon"></i></div>
+              <div class="social-media-box"><i class="fa-brands fa-facebook-f social-media-icon"></i></div>
+              <div class="social-media-box"><i class="fa-brands fa-twitter social-media-icon"></i></div>
+              <div class="social-media-box"><i class="fa-brands fa-instagram social-media-icon"></i></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-3 col-lg-3 p-0 team-box">
+          <div class="team-box-img-box">
+            <img src="marketing-support.jpg" alt="" class="team-box-img" />
+          </div>
+          <div class="team-box-text">
+            <h2 class="team-box-text-h2">Calvin Klein</h2>
+            <h4 class="team-box-text-h4">Marketing Support</h4>
+            <div class="social-media">
+              <div class="social-media-box"><i class="fa-brands fa-linkedin-in social-media-icon"></i></div>
+              <div class="social-media-box"><i class="fa-brands fa-facebook-f social-media-icon"></i></div>
+              <div class="social-media-box"><i class="fa-brands fa-twitter social-media-icon"></i></div>
+              <div class="social-media-box"><i class="fa-brands fa-instagram social-media-icon"></i></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-3 col-lg-3 p-0 team-box">
+          <div class="team-box-img-box">
+            <img src="underwriter.jpg" alt="" class="team-box-img" />
+          </div>
+          <div class="team-box-text">
+            <h2 class="team-box-text-h2">Alastair Cook</h2>
+            <h4 class="team-box-text-h4">Underwriter</h4>
+            <div class="social-media">
+              <div class="social-media-box"><i class="fa-brands fa-linkedin-in social-media-icon"></i></div>
+              <div class="social-media-box"><i class="fa-brands fa-facebook-f social-media-icon"></i></div>
+              <div class="social-media-box"><i class="fa-brands fa-twitter social-media-icon"></i></div>
+              <div class="social-media-box"><i class="fa-brands fa-instagram social-media-icon"></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class=" testimonials">
+      <div class="testimonial-heading">
+        <h2 class="testimonial-heading-h2">Testimonials</h2>
+          <h1 class="testimonial-heading-h1">What our client say</h1>
+        </div>
+        <div class=" testimonial-boxes" >
+            <div class=" testimonial-box">
+             
+                <div class=" testimonial-box-img">
+                 <svg id="sw-js-blob-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">  
+                <defs>            
+                <linearGradient id="sw-gradient" x1="0" x2="1" y1="1" y2="0">
+                    <stop id="stop1" stop-color="rgba(219, 39, 119, 1)" offset="0%"></stop>
+                    <stop id="stop2" stop-color="rgba(245, 158, 11, 1)" offset="100%"></stop>
+                </linearGradient>
+            </defs>               
+    <mask id="mask1" mask-type="alpha">
+  <path fill="url(#sw-gradient)" d="M21.4,-16.8C27.6,-9.4,32.1,-0.5,30.7,7.5C29.2,15.5,21.8,22.7,12.6,27.7C3.3,32.8,-7.7,35.9,-16.5,32.4C-25.2,28.8,-31.7,18.8,-33.7,8.2C-35.7,-2.4,-33.2,-13.4,-26.9,-20.8C-20.5,-28.2,-10.2,-31.9,-1.3,-30.9C7.7,-29.8,15.3,-24.1,21.4,-16.8Z" width="100%" height="100%" transform="translate(50 50)" stroke-width="0" style="transition: all 0.3s ease 0s;"></path>
+ </mask>
+<g mask="url(#mask1)"> 
+<path fill="url(#sw-gradient)" d="M21.4,-16.8C27.6,-9.4,32.1,-0.5,30.7,7.5C29.2,15.5,21.8,22.7,12.6,27.7C3.3,32.8,-7.7,35.9,-16.5,32.4C-25.2,28.8,-31.7,18.8,-33.7,8.2C-35.7,-2.4,-33.2,-13.4,-26.9,-20.8C-20.5,-28.2,-10.2,-31.9,-1.3,-30.9C7.7,-29.8,15.3,-24.1,21.4,-16.8Z" width="100%" height="100%" transform="translate(50 50)" stroke-width="0" style="transition: all 0.3s ease 0s;"></path>
+<image href="mark (1).png" x="12" y="20"  class="box-img" alt="">
+</g>
+</svg>
+
+                </div>
+        
+                <i class="icofont-quote-left testimonial-box-icon1"></i>
+                <i class="icofont-quote-right testimonial-box-icon2"></i>
+                <div class="testimonial-box-text">
+                    <div class="testimonial-box-text-name"><span class="name">Mark Anderson </span><span class="post">E-commerce Manager at GlobalGoods Inc</span></div>
+                    <div class="star">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </div>
+                    <div class="testimonial-box-text-content">"OptiRank's SEO magic worked wonders for us at GlobalGoods Inc! Our products are now easily discoverable, and online sales have seen a significant boost. </div>
+                </div>
+            </div>
+        <div class=" testimonial-box">
+          <div class=" testimonial-box-img">
+            <svg id="sw-js-blob-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">  
+           <defs>            
+           <linearGradient id="sw-gradient" x1="0" x2="1" y1="1" y2="0">
+               <stop id="stop1" stop-color="rgba(219, 39, 119, 1)" offset="0%"></stop>
+               <stop id="stop2" stop-color="rgba(245, 158, 11, 1)" offset="100%"></stop>
+           </linearGradient>
+       </defs>               
+<mask id="mask1" mask-type="alpha">
+<path fill="url(#sw-gradient)" d="M21.4,-16.8C27.6,-9.4,32.1,-0.5,30.7,7.5C29.2,15.5,21.8,22.7,12.6,27.7C3.3,32.8,-7.7,35.9,-16.5,32.4C-25.2,28.8,-31.7,18.8,-33.7,8.2C-35.7,-2.4,-33.2,-13.4,-26.9,-20.8C-20.5,-28.2,-10.2,-31.9,-1.3,-30.9C7.7,-29.8,15.3,-24.1,21.4,-16.8Z" width="100%" height="100%" transform="translate(50 50)" stroke-width="0" style="transition: all 0.3s ease 0s;"></path>
+</mask>
+<g mask="url(#mask1)"> 
+<path fill="url(#sw-gradient)" d="M21.4,-16.8C27.6,-9.4,32.1,-0.5,30.7,7.5C29.2,15.5,21.8,22.7,12.6,27.7C3.3,32.8,-7.7,35.9,-16.5,32.4C-25.2,28.8,-31.7,18.8,-33.7,8.2C-35.7,-2.4,-33.2,-13.4,-26.9,-20.8C-20.5,-28.2,-10.2,-31.9,-1.3,-30.9C7.7,-29.8,15.3,-24.1,21.4,-16.8Z" width="100%" height="100%" transform="translate(50 50)" stroke-width="0" style="transition: all 0.3s ease 0s;"></path>
+<image href="alice.png" x="12" y="20"  class="box-img" alt="">
+</g>
+</svg>
+
+           </div>
+   
+           <i class="icofont-quote-left testimonial-box-icon1"></i>
+           <i class="icofont-quote-right testimonial-box-icon2"></i>
+           <div class="testimonial-box-text">
+               <div class="testimonial-box-text-name"><span class="name">Alice Turner</span><span class="post">Marketing Director at TechPro Solutions</span></div>
+               <div class="star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+               <div class="testimonial-box-text-content">"OptiRank transformed our SEO game! Thanks to their expert strategies, our website at TechPro Solutions now ranks higher, attracting more leads. </div>
+           </div>
+        </div>
+        <div class=" testimonial-box">
+          <div class=" testimonial-box-img">
+            <svg id="sw-js-blob-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">  
+           <defs>            
+           <linearGradient id="sw-gradient" x1="0" x2="1" y1="1" y2="0">
+               <stop id="stop1" stop-color="rgba(219, 39, 119, 1)" offset="0%"></stop>
+               <stop id="stop2" stop-color="rgba(245, 158, 11, 1)" offset="100%"></stop>
+           </linearGradient>
+       </defs>               
+<mask id="mask1" mask-type="alpha">
+<path fill="url(#sw-gradient)" d="M21.4,-16.8C27.6,-9.4,32.1,-0.5,30.7,7.5C29.2,15.5,21.8,22.7,12.6,27.7C3.3,32.8,-7.7,35.9,-16.5,32.4C-25.2,28.8,-31.7,18.8,-33.7,8.2C-35.7,-2.4,-33.2,-13.4,-26.9,-20.8C-20.5,-28.2,-10.2,-31.9,-1.3,-30.9C7.7,-29.8,15.3,-24.1,21.4,-16.8Z" width="100%" height="100%" transform="translate(50 50)" stroke-width="0" style="transition: all 0.3s ease 0s;"></path>
+</mask>
+<g mask="url(#mask1)"> 
+<path fill="url(#sw-gradient)" d="M21.4,-16.8C27.6,-9.4,32.1,-0.5,30.7,7.5C29.2,15.5,21.8,22.7,12.6,27.7C3.3,32.8,-7.7,35.9,-16.5,32.4C-25.2,28.8,-31.7,18.8,-33.7,8.2C-35.7,-2.4,-33.2,-13.4,-26.9,-20.8C-20.5,-28.2,-10.2,-31.9,-1.3,-30.9C7.7,-29.8,15.3,-24.1,21.4,-16.8Z" width="100%" height="100%" transform="translate(50 50)" stroke-width="0" style="transition: all 0.3s ease 0s;"></path>
+<image href="sophie.png" x="8" y="20"  class="box-img" alt="">
+</g>
+</svg>
+
+           </div>
+   
+           <i class="icofont-quote-left testimonial-box-icon1"></i>
+           <i class="icofont-quote-right testimonial-box-icon2"></i>
+           <div class="testimonial-box-text">
+               <div class="testimonial-box-text-name"><span class="name">Sophie Miller</span><span class="post">Founder of StyleHaven Boutique</span></div>
+               <div class="star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+               <div class="testimonial-box-text-content">"OptiRank is a game-changer for small businesses! StyleHaven Boutique's visibility soared after their tailored SEO approach. Grateful for the results! </div>
+           </div>
+        </div>
+        <div class=" testimonial-box">
+<div class=" testimonial-box-img">
+            <svg id="sw-js-blob-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">  
+           <defs>            
+           <linearGradient id="sw-gradient" x1="0" x2="1" y1="1" y2="0">
+               <stop id="stop1" stop-color="rgba(219, 39, 119, 1)" offset="0%"></stop>
+               <stop id="stop2" stop-color="rgba(245, 158, 11, 1)" offset="100%"></stop>
+           </linearGradient>
+       </defs>               
+<mask id="mask1" mask-type="alpha">
+<path fill="url(#sw-gradient)" d="M21.4,-16.8C27.6,-9.4,32.1,-0.5,30.7,7.5C29.2,15.5,21.8,22.7,12.6,27.7C3.3,32.8,-7.7,35.9,-16.5,32.4C-25.2,28.8,-31.7,18.8,-33.7,8.2C-35.7,-2.4,-33.2,-13.4,-26.9,-20.8C-20.5,-28.2,-10.2,-31.9,-1.3,-30.9C7.7,-29.8,15.3,-24.1,21.4,-16.8Z" width="100%" height="100%" transform="translate(50 50)" stroke-width="0" style="transition: all 0.3s ease 0s;"></path>
+</mask>
+<g mask="url(#mask1)"> 
+<path fill="url(#sw-gradient)" d="M21.4,-16.8C27.6,-9.4,32.1,-0.5,30.7,7.5C29.2,15.5,21.8,22.7,12.6,27.7C3.3,32.8,-7.7,35.9,-16.5,32.4C-25.2,28.8,-31.7,18.8,-33.7,8.2C-35.7,-2.4,-33.2,-13.4,-26.9,-20.8C-20.5,-28.2,-10.2,-31.9,-1.3,-30.9C7.7,-29.8,15.3,-24.1,21.4,-16.8Z" width="100%" height="100%" transform="translate(50 50)" stroke-width="0" style="transition: all 0.3s ease 0s;"></path>
+<image href="charlie.png" x="0" y="22"  class="box-img" alt="">
+</g>
+</svg>
+
+           </div>
+   
+           <i class="icofont-quote-left testimonial-box-icon1"></i>
+           <i class="icofont-quote-right testimonial-box-icon2"></i>
+           <div class="testimonial-box-text">
+               <div class="testimonial-box-text-name"><span class="name">Charlie Harris </span><span class="post">CEO of FinTech Innovators</span></div>
+               <div class="star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+               <div class="testimonial-box-text-content">"Kudos to OptiRank for revolutionizing our online presence at FinTech Innovators! Their strategic SEO interventions have established us as industry leaders. </div>
+           </div>
+        </div>
+        <div class=" testimonial-box">
+<div class=" testimonial-box-img">
+            <svg id="sw-js-blob-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">  
+           <defs>            
+           <linearGradient id="sw-gradient" x1="0" x2="1" y1="1" y2="0">
+               <stop id="stop1" stop-color="rgba(219, 39, 119, 1)" offset="0%"></stop>
+               <stop id="stop2" stop-color="rgba(245, 158, 11, 1)" offset="100%"></stop>
+           </linearGradient>
+       </defs>               
+<mask id="mask1" mask-type="alpha">
+<path fill="url(#sw-gradient)" d="M21.4,-16.8C27.6,-9.4,32.1,-0.5,30.7,7.5C29.2,15.5,21.8,22.7,12.6,27.7C3.3,32.8,-7.7,35.9,-16.5,32.4C-25.2,28.8,-31.7,18.8,-33.7,8.2C-35.7,-2.4,-33.2,-13.4,-26.9,-20.8C-20.5,-28.2,-10.2,-31.9,-1.3,-30.9C7.7,-29.8,15.3,-24.1,21.4,-16.8Z" width="100%" height="100%" transform="translate(50 50)" stroke-width="0" style="transition: all 0.3s ease 0s;"></path>
+</mask>
+<g mask="url(#mask1)"> 
+<path fill="url(#sw-gradient)" d="M21.4,-16.8C27.6,-9.4,32.1,-0.5,30.7,7.5C29.2,15.5,21.8,22.7,12.6,27.7C3.3,32.8,-7.7,35.9,-16.5,32.4C-25.2,28.8,-31.7,18.8,-33.7,8.2C-35.7,-2.4,-33.2,-13.4,-26.9,-20.8C-20.5,-28.2,-10.2,-31.9,-1.3,-30.9C7.7,-29.8,15.3,-24.1,21.4,-16.8Z" width="100%" height="100%" transform="translate(50 50)" stroke-width="0" style="transition: all 0.3s ease 0s;"></path>
+<image href="ryan.png" x="8" y="20"  class="box-img" alt="">
+</g>
+</svg>
+
+           </div>
+   
+           <i class="icofont-quote-left testimonial-box-icon1"></i>
+           <i class="icofont-quote-right testimonial-box-icon2"></i>
+           <div class="testimonial-box-text">
+               <div class="testimonial-box-text-name"><span class="name">Ryan Davis </span><span class="post">Real Estate Mogul at Urban Estates Group</span></div>
+               <div class="star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+               <div class="testimonial-box-text-content">"OptiRank elevated our property listings game at Urban Estates Group! Thanks to their SEO strategies, our real estate ventures are getting the attention they deserve. </div>
+           </div>
+        </div>
+        <div class=" testimonial-box">
+<div class=" testimonial-box-img">
+            <svg id="sw-js-blob-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">  
+           <defs>            
+           <linearGradient id="sw-gradient" x1="0" x2="1" y1="1" y2="0">
+               <stop id="stop1" stop-color="rgba(219, 39, 119, 1)" offset="0%"></stop>
+               <stop id="stop2" stop-color="rgba(245, 158, 11, 1)" offset="100%"></stop>
+           </linearGradient>
+       </defs>               
+<mask id="mask1" mask-type="alpha">
+<path fill="url(#sw-gradient)" d="M21.4,-16.8C27.6,-9.4,32.1,-0.5,30.7,7.5C29.2,15.5,21.8,22.7,12.6,27.7C3.3,32.8,-7.7,35.9,-16.5,32.4C-25.2,28.8,-31.7,18.8,-33.7,8.2C-35.7,-2.4,-33.2,-13.4,-26.9,-20.8C-20.5,-28.2,-10.2,-31.9,-1.3,-30.9C7.7,-29.8,15.3,-24.1,21.4,-16.8Z" width="100%" height="100%" transform="translate(50 50)" stroke-width="0" style="transition: all 0.3s ease 0s;"></path>
+</mask>
+<g mask="url(#mask1)"> 
+<path fill="url(#sw-gradient)" d="M21.4,-16.8C27.6,-9.4,32.1,-0.5,30.7,7.5C29.2,15.5,21.8,22.7,12.6,27.7C3.3,32.8,-7.7,35.9,-16.5,32.4C-25.2,28.8,-31.7,18.8,-33.7,8.2C-35.7,-2.4,-33.2,-13.4,-26.9,-20.8C-20.5,-28.2,-10.2,-31.9,-1.3,-30.9C7.7,-29.8,15.3,-24.1,21.4,-16.8Z" width="100%" height="100%" transform="translate(50 50)" stroke-width="0" style="transition: all 0.3s ease 0s;"></path>
+<image href="natalie.png" x="8" y="20"  class="box-img" alt="">
+</g>
+</svg>
+
+           </div>
+   
+           <i class="icofont-quote-left testimonial-box-icon1"></i>
+           <i class="icofont-quote-right testimonial-box-icon2"></i>
+           <div class="testimonial-box-text">
+               <div class="testimonial-box-text-name"><span class="name">Natalie Foster</span><span class="post">Online Education Manager at LearnHub Academy</span></div>
+               <div class="star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+               <div class="testimonial-box-text-content">"LearnHub Academy owes its online success to OptiRank! Our courses are now easily discoverable, attracting learners globally.  </div>
+           </div>             
+        </div>
+    </div>
+  </div>
+
+    <div class="conatiner contact">
+      <div class="row main-contact p-3 row-gap-3" style="width: 100%;">
+        <div class="col-lg-5 contact-left">
+      <img src="contact-img.jpg" alt="" class="contact-img">
+        </div>
+        <div class="col-lg-7 col-md-12 col-sm-12 col-12 contact-right">
+          <div class="row" style="width: 100%;">
+            <div class="col-12">
+              <h2 class="contact-sub-head">Analysis</h2>
+            </div>
+            <div class="col-12 " style="width: 100%;">
+          <h1 class="contact-head">Get Free SEO Analysis</h1></div>
+            <div class="col-12 " style="width: 100%;">
+          <p class="contact-main-txt">"At OptiRank, our SEO expertise shines through a free analysis, empowering your online success with tailored strategies for optimal search engine visibility and rankings."</p></div>
+          <div class="col-12 p-0">
+          <form action="" class="form">
+            <div class="row row-gap-3" style="width: 100%">
+              <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                <input
+                  type="text"
+                  class="input-border"
+                  name="fname"
+                  placeholder="Your name"
+                  aria-label="First name"
+                />
+              </div>
+              <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                <input
+                  type="text"
+                  class="input-border"
+                  placeholder="Email"
+                  aria-label="Last name"
+                />
+              </div>
+            </div>
+            <div class="row row-gap-3" style="width: 100%">
+              <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                <input
+                  type="text"
+                  class="input-border"
+                  placeholder="Phone"
+                  aria-label="First name"
+                />
+              </div>
+              <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                <input
+                  type="text"
+                  class="input-border"
+                  placeholder="Website"
+                  aria-label="Last name"
+                />
+              </div>
+            </div>
+            <div class="row row-gap-3" style="width: 100%">
+              <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-3">
+                <button class="contact-btn" type="submit">
+                  <span class="contact-btn-txt">Send Message</span> 
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+         
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <div class="container blog">
+        <h2 class="blog-sub-head">Blog</h2>
+        <h1 class="blog-head">Read Our Latest Project</h1>
+      
+      <div class="row row-gap-5 mt-5 blog-boxes" style="width: 100%;">
+        <div class="col-12 col-sm-12 col-md-6  col-lg-4"><div class="blog-box">
+            <div class="blog-box-img"><img src="/templatemo_582_tale_seo_agency/assets/images/projects-01.jpg" alt="" class="blog-img"></div>
+            <div class=" blog-box-text">
+              <div class="blog-box-text-first">
+                <span class="admin"><i class="fa-solid fa-user admin-icon"></i><span class="admin-text">By user</span></span><span class="comments"><i class="fa-regular fa-comments comments-icon"></i> comments</span></div>
+                <h3 class="blog-box-text-h2">Startup Marketing Solution for Business Owner</h3>
+                <p class="blog-main-txt">Empower your startup's success with our comprehensive marketing solutions, designed to boost visibility, engagement, and sustainable growth for business </p>
+                <button class="read-more"><span class="read-more-txt">Read more</span></button>
+                <div class="date">03 jan</div>
+              </div>
+         
+        </div></div>
+        <div class="col-12 col-sm-12 col-md-6  col-lg-4"><div class="blog-box">
+         
+            <div class=" blog-box-img"><img src="/templatemo_582_tale_seo_agency/assets/images/projects-02.jpg" alt="" class="blog-img"></div>
+            <div class=" blog-box-text">
+              <div class="blog-box-text-first">
+                <span class="admin"><i class="fa-solid fa-user admin-icon"></i><span class="admin-text">By user</span></span><span class="comments"><i class="fa-regular fa-comments comments-icon"></i> comments</span></div>
+                <h2 class="blog-box-text-h2">Skyrocket Digital Agency with Strategic Growth.</h2>
+                <p class="blog-main-txt">Revitalize your digital marketing agency with strategic approaches, maximizing client satisfaction, visibility, and sustained growth for lasting success and impact.</p>
+                <button class="read-more"><span class="read-more-txt">Read more</span></button>
+                <div class="date">03 jan</div>
+              </div>
+        
+        </div></div>
+        <div class="col-12 col-sm-12 col-md-6  col-lg-4"><div class="blog-box">
+            <div class=" blog-box-img"><img src="/templatemo_582_tale_seo_agency/assets/images/projects-03.jpg" alt="" class="blog-img"></div>
+            <div class=" blog-box-text">
+              <div class="blog-box-text-first">
+                <span class="admin"><i class="fa-solid fa-user admin-icon"></i><span class="admin-text">By user</span></span><span class="comments"><i class="fa-regular fa-comments comments-icon"></i> comments</span></div>
+              <h2 class="blog-box-text-h2">Creative solutions to improve your business!</h2>
+              <p class="blog-main-txt">Elevate your business with creative solutions, enhancing innovation and profitability through strategic approaches tailored for lasting success and growth.</p>
+              <button class="read-more"><span class="read-more-txt">Read more</span></button>
+              <div class="date">03 jan</div>
+              </div>
+        </div></div>
+      </div>
+    </div>
+
+    <div class="conatiner-fluid newsletter">
+      <div class="row" style="width: 100%;">
+        <div class="col-12 col-md-12 col-lg-12"><div class="newsletter-left"><h2 class="newsletter-left-h2">Sign Up For Newsletter</h2><h4 class="newsletter-left-h4">And Receive 40% Discount On First Project</h4></div></div>
+        <div class="col-12 col-md-12 col-lg-12 "><div class="newsletter-right">
+          
+          <input
+            class="newsletter-search"
+            type="search"
+            placeholder="Enter your Email"
+            aria-label="Search"
+          />
+          <button class="newsletter-btn" type="submit"><span class="newsletter-btn-txt">Subscribe now</span></button>
+       </div></div>
+      </div>
+    </div>
+
+    <div class="container-fluid footer">
+      <div class="row mt-5 row-gap-3">
+        <div class="col-12 col-md-3 col-lg-3 p-3 gap-3 footer-logo">
+          <div class="footer-logo-img">
+          <img src="head-logo.png" class="footer-opti-logo" />
+          <span class="footer-logo-text">OptiRank</span></div>
+          <div class="footer-logo-main">OptiRank is a leading SEO agency, specializing in boosting online visibility and driving organic traffic through strategic optimization techniques.</div>
+        <div class="footer-logo-social">
+        <div class="footer-logo-social-box"><i class="fa-brands fa-linkedin-in footer-social-media-icon"></i></div>
+        <div class="footer-logo-social-box"><i class="fa-brands fa-facebook-f footer-social-media-icon"></i></div>
+        <div class="footer-logo-social-box"><i class="fa-brands fa-twitter footer-social-media-icon"></i></div>
+        <div class="footer-logo-social-box"><i class="fa-brands fa-instagram footer-social-media-icon"></i></div></div>
+        </div>
+        <div class="col-6 col-md-3 col-lg-3 p-3 footer-nav">
+          <h2 class="footer-nav-h2">Important link</h2>
+          <a href="" class="footer-nav-link">Pages</a>
+          <a href="" class="footer-nav-link">Projects</a>
+          <a href="" class="footer-nav-link">Services</a>
+          <a href="" class="footer-nav-link">About us</a>
+          <a href="" class="footer-nav-link">Contact</a>
+        </div>
+        <div class="col-6 col-md-3 col-lg-3 p-3 footer-nav">
+          <h2 class="Featured-Service-h2">Featured Service</h2>
+          <a href="" class="footer-nav-link">SEO Marketing</a>
+          <a href="" class="footer-nav-link">SEO Services</a>
+          <a href="" class="footer-nav-link">Services</a>
+          <a href="" class="footer-nav-link">Pay-Per-Click</a>
+          <a href="" class="footer-nav-link">Social Media</a>
+        </div>
+        <div class="col-12 col-md-12 col-lg-3 p-3 footer-nav">
+          <h2 class="Featured-Service-h2">Contact</h2>
+          <a href="" class="footer-nav-link">
+            <div class="footer-nav-link-contact">
+              <div class="footer-nav-link-icon-box">
+                <i class="fa-solid fa-phone footer-nav-link-icon"></i>
+              </div>
+              <div class="footer-nav-link-icon-txt"><span class="phone">Phone</span><span class="phoneno">010-020-0340</span></div>
+            </div></a>
+          <a href="" class="footer-nav-link"><div class="footer-nav-link-contact">
+              <div class="footer-nav-link-icon-box">
+                <i class="fa-solid fa-envelope footer-nav-link-icon"></i>
+              </div>
+              <div class="footer-nav-link-icon-txt"><span class="phone">Email</span><span class="phoneno">info@company.com</span></div>
+            </div></a>
+          <a href="" class="footer-nav-link"><div class="footer-nav-link-contact">
+              <div class="footer-nav-link-icon-box">
+                <i class="fa-solid fa-location-dot footer-nav-link-icon"></i>
+              </div>
+              <div class="footer-nav-link-icon-txt"><span class="phone">Address</span><span class="phoneno">Sunny Isles Beach, FL 33160, United States</span></div>
+            </div></a>
+          
+        </div>
+      </div>
+      <div class="row mt-3 " style="width: 100%;">
+        <div class="col-12 col-sm-12 col-lg-5 copyright-1">
+          <a href="#" class="copyright-1-link">© 2007 OptiRank. All rights reserved.</a>
+        </div>
+        <div class="col-12 col-sm-12 col-lg-5 copyright-2">
+          <a href="#" class="copyright-2-link">Terms & Conditions | Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      let popup = document.getElementById('popup');
+      function videoShow(){
+        popup.style.display = "flex";
+      }
+      function videoHide(){
+        popup.style.display = "none";
+        
+      }
+    </script>
+
+   
+
+    <script src="/node_modules/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script
+      src="https://kit.fontawesome.com/f44e101240.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      AOS.init({ duration: 3000, delay: 40 });
+    </script>
+  </body>
+</html>

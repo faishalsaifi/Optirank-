@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OptiRank</title>
+    <link rel="stylesheet" href="about-us.css" />
+
+    <link
+      rel="stylesheet"
+      href="/node_modules/owl.carousel/dist/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/bower_components/owl.carousel/dist/assets/owl.carousel.min.css"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter+Tight&family=Josefin+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap");
+    </style>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter+Tight&family=Josefin+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap");
+    </style>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+    </style>
+
+    <link rel="stylesheet" href="blobz.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link rel="stylesheet" href="icofont/icofont/icofont.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="icofont/icofont/icofont.min.css" />
+    <link rel="stylesheet" href="icofont(1)/icofont.min.css" />
+    <script src="main.js"defer></script>
+  </head>
+  <body class="blob">
+    <div class="mobile-nav-border">
+    <nav class="navbar navbar-expand-md p-3  p-md-0 p-lg-1 " style="width: 100%;  z-index: 999;
+   background: #fff;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img src="head-logo.png" class="head-logo" />
+          <span class="logo"><span class="big">Opti</span>Rank</span></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo01"
+          aria-controls="navbarTogglerDemo01"
+          style="border: none"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span
+            class="navbar-toggler-i"
+            style="
+              height: fit-content;
+              width: fit-content;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            "
+            ><i class="fa-solid fa-bars toggle"></i
+          ></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <ul class="navbar-nav navbar-scroll ms-auto mb-2 mb-lg-0 ">
+            <li class="nav-item m-2 m-md-0 mt-md-2 m-lg-2">
+              <a class="nav-link" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item m-2 m-md-0 mt-md-2 m-lg-2">
+              <a class="nav-link" href="about-us.html" id="active">Aboutus</a>
+            </li>
+            <li class="nav-item m-2 m-md-0 mt-md-2 m-lg-2">
+              <a class="nav-link" href="services.html">Services <i class="fa-solid fa-plus nav-icon"></i></a>
+              <div class="nav-hover">
+                <a href="services.html" class="nav-hover-link nav-hover-first">Services</a>
+                <a href="service-detail.html" class="nav-hover-link">Services-details</a>
+              </div>
+            </li>
+            <li class="nav-item m-2 m-md-0 mt-md-2 m-lg-2">
+              <a class="nav-link" href="project.html">Projects <i class="fa-solid fa-plus nav-icon"></i></a>
+              <div class="nav-hover">
+                <a href="projects.html" class="nav-hover-link nav-hover-first">projects</a>
+                <a href="project-2.html" class="nav-hover-link">projects 2</a>
+                <a href="project-detail.html" class="nav-hover-link">projects details</a>
+              </div>
+            </li>
+            <li class="nav-item m-2 m-md-0 mt-md-2 m-lg-2">
+              <a class="nav-link" href="blog.html">Blog <i class="fa-solid fa-plus nav-icon"></i></a>
+              <div class="nav-hover">
+                <a href="blog.html" class="nav-hover-link nav-hover-first">Blog</a>
+                <a href="blog-detail.html" class="nav-hover-link">Blog Details</a>
+              </div>
+            </li>
+            <li class="nav-item m-2 m-md-0 mt-md-2 m-lg-2">
+              <a class="nav-link" href="#">Pages <i class="fa-solid fa-plus nav-icon"></i></a>
+              <div class="nav-hover">
+                <a href="features.html" class="nav-hover-link nav-hover-first">features</a>
+                <a href="team.html" class="nav-hover-link">team</a>
+                <a href="pricing.html" class="nav-hover-link">Pricing</a>
+                <a href="faq.html" class="nav-hover-link">faq</a>
+                <a href="error.html" class="nav-hover-link">404 ERROR</a>
+                
+              </div>
+            </li>
+            <li class="nav-item m-2 m-md-0 mt-md-2 m-lg-2">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+          <div class="ms-auto">
+            <button class="search-button">
+              <span class="search-button-txt"> Get Started</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    </div>
+
+    <div class="service-main">
+      <div class="service-main-head-logo">
+        <img src="head-logo.png" alt="" class="service-main-img" />
+      </div>
+      <div class="service-main-head-heading">About us</div>
+      <div class="service-main-head-main">
+        Elevate your online presence with strategic<br />SEO solutions, driving
+        visibility and success.
+      </div>
+    </div>
+
+    <div class="conatiner text-align-center main-about">
+      <div class="row" style="overflow: hidden">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 left">
+          <img src="about-us.png" alt="" class="about-img" />
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 row-gap-1 right">
+          <h2 class="right-sub-head">About us</h2>
+          <h1 class="right-head">We are Dynamic Team of SEO Agency</h1>
+          <div class="right-main-txt">
+            "OptiRank, your digital catalyst, delivers tailored SEO solutions to
+            elevate online visibility and drive sustainable success."
+            <div class="right-main-txt-brief">
+              "OptiRank, a leading SEO agency, specializes in enhancing online
+              visibility through strategic optimization. With a focus on
+              tailored solutions, we propel businesses to new heights by
+              optimizing digital landscapes and driving organic growth. Choose
+              OptiRank for a dynamic and results-driven approach to SEO
+              excellence."
+            </div>
+          </div>
+          <div class="statistics">
+            <div class="projects-statistics">
+              <div class="number">1,165 <span class="plus">+</span></div>
+              <span class="number-text">projects completed</span>
+            </div>
+            <div class="client-statistics">
+              <div class="number">2,665 <span class="plus">+</span></div>
+              <span class="number-text">Satisfied Clients</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class=" features">
+      <div class="row row-gap-5 features-box">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 feature-left">
+          <h2 class="feature-left-sub">Care Features</h2>
+          <h1 class="feature-left-head">
+            Create Awesome Service<br />With Our Tools
+          </h1>
+        </div>
+        <div
+          class="col-12 col-sm-12 col-md-12 col-lg-12 container feature-right"
+        >
+          <div class="row row-gap-3">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+              <div class="feature-right-box first-box">
+                <div class="feature-box-img-border">
+                  <img src="consultancy.png" class="feature-box-img" alt="" />
+                </div>
+                <h2 class="feature-box-head">Seo consultancy</h2>
+                <p class="feature-box-main">
+                  OptiRank offers top-tier SEO consultancy, providing expert
+                  guidance for unparalleled online success.
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+              <div class="feature-right-box second-box">
+                <div class="feature-box-img-border">
+                  <img src="exploration.png" class="feature-box-img" alt="" />
+                </div>
+                <h2 class="feature-box-head">Competitor Analysis</h2>
+                <p class="feature-box-main">
+                  OptiRank's competitor analysis unveils key insights, ensuring
+                  your business stays ahead in the digital landscape.
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+              <div class="feature-right-box third-box">
+                <div class="feature-box-img-border">
+                  <img src="advertising.png" class="feature-box-img" alt="" />
+                </div>
+                <h2 class="feature-box-head">Social Media Marketing</h2>
+                <p class="feature-box-main">
+                  OptiRank offers top-tier SEO consultancy, providing expert
+                  guidance for unparalleled online success.
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+              <div class="feature-right-box fourth-box">
+                <div class="feature-box-img-border">
+                  <img src="content.png" class="feature-box-img" alt="" />
+                </div>
+                <h2 class="feature-box-head">Content Creation</h2>
+                <p class="feature-box-main">
+                  "OptiRank crafts compelling and SEO-optimized content that
+                  captivates audiences, driving organic engagement and enhancing
+                  online visibility."
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="services">
+      <div class="services-child2">
+        <h2 class="service-h3">services</h2>
+        <h1 class="service-heading">How We Can Help?</h1>
+        <br />
+        <div class="service-boxes">
+          <div class="box">
+            <div class="box-i">
+              <img src="discovery.png" class="box-icon" alt="" />
+            </div>
+            <div class="box-text">
+              <h2 class="box-h2 service-box-heading">
+                Discover More on current SEO Trends
+              </h2>
+              <p class="service-box-main">
+                OptiRank masters advanced SEO with AI, UX, and data for
+                top-notch outcomes..
+              </p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="box-i">
+              <img src="dashboard.png" class="box-icon" alt="" />
+            </div>
+            <div class="box-text">
+              <h2 class="box-h2">Real-Time Big Data Analysis</h2>
+              <p class="service-box-main">
+                Real-time big data swiftly powers instant decisions, crucial in
+                finance and cybersecurity.
+              </p>
+              <p></p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="box-i">
+              <img src="data-analysis.png" class="box-icon" alt="" />
+            </div>
+            <div class="box-text">
+              <h2 class="box-h2">Precise Data Analysis & Prediction</h2>
+              <p class="service-box-main">
+                Precise data analysis translates patterns into accurate
+                predictions with utmost reliability.
+              </p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="box-i">
+              <img src="social-media-marketing.png" class="box-icon" alt="" />
+            </div>
+            <div class="box-text">
+              <h2 class="box-h2">SEO Marketing & Social Media</h2>
+              <p class="service-box-main">
+                SEO and social media collaborate to boost content visibility,
+                engagement, and brand recognition online.
+              </p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="box-i">
+              <img src="search.png" class="box-icon" alt="" />
+            </div>
+            <div class="box-text">
+              <h2 class="box-h2">Local SEO Optimization</h2>
+              <p class="service-box-main">
+                Enhancing visibility in regional searches for increased local
+                business traffic.
+              </p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="box-i">
+              <img src="application.png" class="box-icon" alt="" />
+            </div>
+            <div class="box-text">
+              <h2 class="box-h2">Mobile SEO Strategy</h2>
+              <p class="service-box-main">
+                Optimizing websites for seamless mobile experiences and higher
+                mobile search rankings.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pricing">
+      <div
+        class="row align-items-center justify-content-center"
+        style="width: 100%"
+      >
+        <div class="col-lg-12"><h2 class="pricing-h2">PRICING PLANS</h2></div>
+        <div class="col-12 col-sm-12 col-md-8 col-lg-7">
+          <h1 class="pricing-h1">The Best Solutions for Our Clients</h1>
+        </div>
+      </div>
+      <div
+        class="row align-items-center justify-content-center"
+        style="width: 100%"
+      >
+        <div class="col-lg-12">
+          <div class="pricing-plan-buttons">
+            <button class="monthly" id="monthly-btn" onclick="monthlyBoxes()">
+              monthly</button><button class="yearly" id="yearly-btn" onclick="yearlyBoxes()">
+              yearly
+            </button>
+          </div>
+          <div class="pricing-boxes">
+            <div
+              class="row monthly-boxes justify-content-center row-gap-5 gap-0 p-sm-0 p-md-1  p-lg-5"
+              id="monthly"
+              style="width: 100%"
+            >
+              <div class="col-sm-6 col-md-6 col-lg-4">
+                <div class="monthly-box">
+                  <h2 class="pricing-box-head"> Basic plan</h2>
+                  <h3 class="pricing-box-price"><span class="dollar">$</span>24</h3>
+                  <div class="pricing-box-benfits">
+                    <span class="pricing-box-keys"><i class="fa-solid fa-check pricing-keys-icon"></i> <span class="pricing-keys-text">SEO Audits</span></span
+                    ><span class="pricing-box-keys"><i class="fa-solid fa-check pricing-keys-icon"></i> <span class="pricing-keys-text">SEO Management
+                    </span></span
+                    ><span class="pricing-box-keys"><i class="fa-solid fa-check pricing-keys-icon"></i> <span class="pricing-keys-text">SEO Copywriting</span></span
+                    ><span class="pricing-box-keys"><i class="fa-solid fa-check pricing-keys-icon"></i> <span class="pricing-keys-text">Link Building</span></span
+                    ><span class="pricing-box-keys"><i class="fa-solid fa-check pricing-keys-icon"></i> <span class="pricing-keys-text">Site Migration</span></span>
+                  </div>
+                  <div class="pricing-box-btn-box"><button class="pricing-box-btn">Get started</button></div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-6 col-lg-4">
+                <div class="monthly-box middle">
+                  <h2 class="pricing-box-head middle-head">standard plan</h2>
+                  <h3 class="pricing-box-price middle-price"><span class="dollar">$</span>59</h3>
+                  <div class="pricing-box-benfits">
+                    <span class="pricing-box-keys"><i class="fa-solid fa-check pricing-keys-icon pricing-keys-icon-middle"></i> <span class="pricing-keys-text pricing-keys-text-middle">SEO Audits</span></span
+                    ><span class="pricing-box-keys"><i class="fa-solid fa-check pricing-keys-icon pricing-keys-icon-middle"></i> <span class="pricing-keys-text pricing-keys-text-middle">SEO Management</span></span
+                    ><span class="pricing-box-keys"><i class="fa-solid fa-check pricing-keys-icon pricing-keys-icon-middle"></i> <span class="pricing-keys-text pricing-keys-text-middle">SEO Copywriting</span></span
+                    ><span class="pricing-box-keys"><i class="fa-solid fa-check pricing-keys-icon pricing-keys-icon-middle"></i> <span class="pricing-keys-text pricing-keys-text-middle">Link Building</span></span
+                    ><span class="pricing-box-keys"><i class="fa-solid fa-check pricing-keys-icon pricing-keys-icon-middle"></i> <span class="pricing-keys-text pricing-keys-text-middle">Site Migration</span></span>
+                  </div>
+                  <div class="pricing-box-btn-box"><button class="pricing-box-btn pricing-box-btn-middle">Get started</button></div>
+                  <div class="circle">
+                    <div class="circle-1"></div>
+                    <div class="circle-2"></div>
+                    <div class="circle-3"></div>
+                    <div class="circle-4"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-4">
+                <div class="monthly-box">
+                  <h2 class="pricing-box-head">premium plan</h2>
+                  <h3 class="pricing-box-price"><span class="dollar">$</span>89</h3>
+                  <div class="pricing-box-benfits">
+                    <span class="pricing-box-keys"><i class="fa-solid fa-check pricing-keys-icon"></i> <span class="pricing-keys-text">SEO Audits</span></span
+                    ><span class="pricing-box-keys"><i class="fa-solid fa-check pricing-keys-icon"></i> <span class="pricing-keys-text">SEO Management</span></span
+                    ><span class="pricing-box-keys"><i class="fa-solid fa-check pricing-keys-icon"></i> <span class="pricing-keys-text">SEO Copywriting</span></span
+                    ><span class="pricing-box-keys"><i class="fa-solid fa-check pricing-keys-icon"></i> <span class="pricing-keys-text">Link Building</span></span
+                    ><span class="pricing-box-keys"><i class="fa-solid fa-check pricing-keys-icon"></i> <span class="pricing-keys-text">Site Migration</span></span>
+                  </div>
+                  <div class="pricing-box-btn-box"><button class="pricing-box-btn">Get started</button></div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="row yearly-boxes justify-content-center row-gap-5 gap-0 p-sm-0 p-md-1  p-lg-5"
+              id="yearly"
+              style="width: 100%; display: none"
+            >
+              <div class="col-sm-6 col-md-4 col-lg-4">
+                <div class="yearly-box">
+                  <h2 class="pricing-box-head"> Basic plan</h2>
+                  <h3 class="pricing-box-price"><span class="dollar">$</span>199</h3>
+                  <div class="pricing-box-benfits">
+                    <span class="pricing-box-keys"><i class="fa-solid fa-check pricing-keys-icon"></i> <span class="pricing-keys-text">SEO Audits</span></span
+                    ><span class="pricing-box-keys"><i class="fa-solid fa-check pricing-keys-icon"></i> <span class="pricing-keys-text">SEO Management</span></span
+                    ><span class="pricing-box-keys"><i class="fa-solid fa-check pricing-keys-icon"></i> <span class="pricing-keys-text">SEO Copywriting</span></span
+                    ><span class="pricing-box-keys"><i class="fa-solid fa-check pricing-keys-icon"></i> <span class="pricing-keys-text">Link Building</span></span
+                    ><span class="pricing-box-keys"><i class="fa-solid fa-check pricing-keys-icon"></i> <span class="pricing-keys-text">Site Migration</span></span>
+                  </div>
+                  <div class="pricing-box-btn-box"><button class="pricing-box-btn">Get started</button></div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4 col-lg-4">
+                <div class="yearly-box middle">
+                  <h2 class="pricing-box-head middle-head">standard plan</h2>
+                  <h3 class="pricing-box-price middle-price"><span class="dollar ">$</span>299</h3>
+                  <div class="pricing-box-benfits">
+                    <span class="pricing-box-keys"><i class="fa-solid fa-check pricing-keys-icon pricing-keys-icon-middle"></i> <span class="pricing-keys-text pricing-keys-text-middle">SEO Audits</span></span
+                    ><span class="pricing-box-keys"><i class="fa-solid fa-check pricing-keys-icon pricing-keys-icon-middle"></i> <span class="pricing-keys-text pricing-keys-text-middle">SEO Management</span></span
+                    ><span class="pricing-box-keys"><i class="fa-solid fa-check pricing-keys-icon pricing-keys-icon-middle"></i> <span class="pricing-keys-text pricing-keys-text-middle">SEO Copywriting</span></span
+                    ><span class="pricing-box-keys"><i class="fa-solid fa-check pricing-keys-icon pricing-keys-icon-middle"></i> <span class="pricing-keys-text pricing-keys-text-middle">Link Building</span></span
+                    ><span class="pricing-box-keys"><i class="fa-solid fa-check pricing-keys-icon pricing-keys-icon-middle"></i> <span class="pricing-keys-text pricing-keys-text-middle">Site Migration</span></span>
+                  </div>
+                  <div class="pricing-box-btn-box"><button class="pricing-box-btn pricing-box-btn-middle">Get started</button></div>
+                  <div class="circle">
+                    <div class="circle-1"></div>
+                    <div class="circle-2"></div>
+                    <div class="circle-3"></div>
+                    <div class="circle-4"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-4 col-lg-4">
+                <div class="yearly-box">
+                  <h2 class="pricing-box-head">premium plan</h2>
+                  <h3 class="pricing-box-price"><span class="dollar">$</span>399</h3>
+                  <div class="pricing-box-benfits">
+                    <span class="pricing-box-keys"><i class="fa-solid fa-check pricing-keys-icon"></i> <span class="pricing-keys-text">SEO Audits</span></span
+                    ><span class="pricing-box-keys"><i class="fa-solid fa-check pricing-keys-icon"></i> <span class="pricing-keys-text">SEO Management</span></span
+                    ><span class="pricing-box-keys"><i class="fa-solid fa-check pricing-keys-icon"></i> <span class="pricing-keys-text">SEO Copywriting</span></span
+                    ><span class="pricing-box-keys"><i class="fa-solid fa-check pricing-keys-icon"></i> <span class="pricing-keys-text">Link Building</span></span
+                    ><span class="pricing-box-keys"><i class="fa-solid fa-check pricing-keys-icon"></i> <span class="pricing-keys-text">Site Migration</span></span>
+                  </div>
+                  <div class="pricing-box-btn-box"><button class="pricing-box-btn">Get started</button></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio">
+        <div class="portfolio-head" style="width: 100%;">
+          <h2 class="portfolio-sub-head">PORTFOLIO</h2></div>
+          <h1 class="portfolio-main-head">Our Project For Client</h1></div>
+        </div>
+      <div class="row p-5 row-gap-5" style="width: 100%">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-4"><div class="portfolio-boxes"><div class="portfolio-box"><img src="portfolio-1.png" alt="" class="portfolio-img"><div class="portfolio-img-hover">Branding</div></div><div class="portfolio-box"><img src="portfolio-2.png" alt="" class="portfolio-img"><div class="portfolio-img-hover">Marketing</div></div></div></div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-4"><div class="portfolio-boxes"><div class="portfolio-box"><img src="portfolio-3.png" alt="" class="portfolio-img"><div class="portfolio-img-hover">SEO</div></div><div class="portfolio-box"><img src="portfolio-4.png" alt="" class="portfolio-img"><div class="portfolio-img-hover">Web Design</div></div><div class="portfolio-box"><img src="portfolio-5.png" alt="" class="portfolio-img"><div class="portfolio-img-hover">Web Developement</div></div></div></div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-4"><div class="portfolio-boxes"><div class="portfolio-box"><img src="portfolio-6.png" alt="" class="portfolio-img"><div class="portfolio-img-hover">Digital Marketing</div></div><div class="portfolio-box"><img src="portfolio-7.png" alt="" class="portfolio-img"><div class="portfolio-img-hover">IT Marketing</div></div></div></div>
+      </div>
+      </div>
+
+      <div class="team">
+        <div class="team-headings">
+          <h2 class="team-sub-head">Team</h2>
+          <h1 class="team-main-head">Meet our team</h1>
+        </div>
+        <div class="row row-gap-5 team-boxes" style="width: 100%">
+          <div class="col-12 col-sm-12 col-md-3 col-lg-3 p-0 team-box">
+            <div class="team-box-img-box">
+              <img src="ceo.jpg" alt="" class="team-box-img" />
+            </div>
+            <div class="team-box-text">
+              <h2 class="team-box-text-h2">Edward Bold</h2>
+              <h4 class="team-box-text-h4">CEO & Founder</h4>
+              <div class="social-media">
+                <div class="social-media-box"><i class="fa-brands fa-linkedin-in social-media-icon"></i></div>
+                <div class="social-media-box"><i class="fa-brands fa-facebook-f social-media-icon"></i></div>
+                <div class="social-media-box"><i class="fa-brands fa-twitter social-media-icon"></i></div>
+                <div class="social-media-box"><i class="fa-brands fa-instagram social-media-icon"></i></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-3 col-lg-3 p-0 team-box">
+            <div class="team-box-img-box">
+              <img src="marketing-support.jpg" alt="" class="team-box-img" />
+            </div>
+            <div class="team-box-text">
+              <h2 class="team-box-text-h2">Calvin Klein</h2>
+              <h4 class="team-box-text-h4">Marketing Support</h4>
+              <div class="social-media">
+                <div class="social-media-box"><i class="fa-brands fa-linkedin-in social-media-icon"></i></div>
+                <div class="social-media-box"><i class="fa-brands fa-facebook-f social-media-icon"></i></div>
+                <div class="social-media-box"><i class="fa-brands fa-twitter social-media-icon"></i></div>
+                <div class="social-media-box"><i class="fa-brands fa-instagram social-media-icon"></i></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-3 col-lg-3 p-0 team-box">
+            <div class="team-box-img-box">
+              <img src="underwriter.jpg" alt="" class="team-box-img" />
+            </div>
+            <div class="team-box-text">
+              <h2 class="team-box-text-h2">Alastair Cook</h2>
+              <h4 class="team-box-text-h4">Underwriter</h4>
+              <div class="social-media">
+                <div class="social-media-box"><i class="fa-brands fa-linkedin-in social-media-icon"></i></div>
+                <div class="social-media-box"><i class="fa-brands fa-facebook-f social-media-icon"></i></div>
+                <div class="social-media-box"><i class="fa-brands fa-twitter social-media-icon"></i></div>
+                <div class="social-media-box"><i class="fa-brands fa-instagram social-media-icon"></i></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="newsletter">
+        <div class="row" style="width: 100%;">
+          <div class="col-12 col-md-12 col-lg-12"><div class="newsletter-left">
+            <h4 class="newsletter-left-h4">Get Started Instantly!</h4>
+            <h2 class="newsletter-left-h2">Get the only new update from this<br>newsletter</h2>
+          </div></div>
+          <div class="col-12 col-md-12 col-lg-12 "><div class="newsletter-right"><form class="newsletter-right-form" role="search">
+            <input
+              class="newsletter-search"
+              type="search"
+              placeholder="Enter your email"
+              aria-label="Search"
+            />
+            <button class="newsletter-btn" type="submit">Subscribe</button>
+          </form></div></div>
+        </div>
+      </div>
+
+      <div class="container-fluid footer">
+        <div class="row mt-0 row-gap-3">
+          <div class="col-12 col-md-3 col-lg-3 p-3 gap-3 footer-logo">
+            <div class="footer-logo-img">
+            <img src="head-logo.png" class="footer-opti-logo" />
+            <span class="footer-logo-text">OptiRank</span></div>
+            <div class="footer-logo-main">OptiRank is a leading SEO agency, specializing in boosting online visibility and driving organic traffic through strategic optimization techniques.</div>
+          <div class="footer-logo-social">
+          <div class="footer-logo-social-box"><i class="fa-brands fa-linkedin-in footer-social-media-icon"></i></div>
+          <div class="footer-logo-social-box"><i class="fa-brands fa-facebook-f footer-social-media-icon"></i></div>
+          <div class="footer-logo-social-box"><i class="fa-brands fa-twitter footer-social-media-icon"></i></div>
+          <div class="footer-logo-social-box"><i class="fa-brands fa-instagram footer-social-media-icon"></i></div></div>
+          </div>
+          <div class="col-6 col-md-3 col-lg-3 p-3 footer-nav">
+            <h2 class="footer-nav-h2">Important link</h2>
+            <a href="" class="footer-nav-link">Pages</a>
+            <a href="" class="footer-nav-link">Projects</a>
+            <a href="" class="footer-nav-link">Services</a>
+            <a href="" class="footer-nav-link">About us</a>
+            <a href="" class="footer-nav-link">Contact</a>
+          </div>
+          <div class="col-6 col-md-3 col-lg-3 p-3 footer-nav">
+            <h2 class="Featured-Service-h2">Featured Service</h2>
+            <a href="" class="footer-nav-link">SEO Marketing</a>
+            <a href="" class="footer-nav-link">SEO Services</a>
+            <a href="" class="footer-nav-link">Services</a>
+            <a href="" class="footer-nav-link">Pay-Per-Click</a>
+            <a href="" class="footer-nav-link">Social Media</a>
+          </div>
+          <div class="col-12 col-md-12 col-lg-3 p-3 footer-nav">
+            <h2 class="Featured-Service-h2">Contact</h2>
+            <a href="" class="footer-nav-link">
+              <div class="footer-nav-link-contact">
+                <div class="footer-nav-link-icon-box">
+                  <i class="fa-solid fa-phone footer-nav-link-icon"></i>
+                </div>
+                <div class="footer-nav-link-icon-txt"><span class="phone">Phone</span><span class="phoneno">010-020-0340</span></div>
+              </div></a>
+            <a href="" class="footer-nav-link"><div class="footer-nav-link-contact">
+                <div class="footer-nav-link-icon-box">
+                  <i class="fa-solid fa-envelope footer-nav-link-icon"></i>
+                </div>
+                <div class="footer-nav-link-icon-txt"><span class="phone">Email</span><span class="phoneno">info@company.com</span></div>
+              </div></a>
+            <a href="" class="footer-nav-link"><div class="footer-nav-link-contact">
+                <div class="footer-nav-link-icon-box">
+                  <i class="fa-solid fa-location-dot footer-nav-link-icon"></i>
+                </div>
+                <div class="footer-nav-link-icon-txt"><span class="phone">Address</span><span class="phoneno">Sunny Isles Beach, FL 33160, United States</span></div>
+              </div></a>
+            
+          </div>
+        </div>
+        <div class="row mt-3 " style="width: 100%;">
+          <div class="col-12 col-sm-12 col-lg-5 copyright-1">
+            <a href="#" class="copyright-1-link">© 2007 OptiRank. All rights reserved.</a>
+          </div>
+          <div class="col-12 col-sm-12 col-lg-5 copyright-2">
+            <a href="#" class="copyright-2-link">Terms & Conditions | Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+
+
+    <script>
+      // const pricebtn = document.querySelectorAll('.price-btn')
+
+      // pricebtn.forEach(pricebtn => {
+      //   pricebtn.addEventListener('click',() =>{
+      //     document.querySelector('.active')?.classList.remove('active');
+      //     pricebtn.classList.add('active');
+      //   })
+      // })
+      let monthly = document.getElementById("monthly");
+      let yearly = document.getElementById("yearly");
+      let monthlybtn = document.getElementById("monthly-btn");
+      let yearlybtn = document.getElementById("yearly-btn");
+
+      function monthlyBoxes() {
+        monthly.style.display = "flex";
+        monthly.style.transition = ".4s ease";
+        yearly.style.display = "none";
+        monthlybtn.style.background = "linear-gradient(135deg,#db2777,#f59e0b)";
+        monthlybtn.style.color = "#fff";
+        yearlybtn.style.background = "linear-gradient(135deg,#db2777,#f59e0b)";
+        yearlybtn.style.backgroundClip = "text";
+        yearlybtn.style.color = "transparent";
+      }
+      function yearlyBoxes() {
+        yearly.style.display = "flex";
+        monthly.style.display = "none";
+        yearlybtn.className = "active";
+        yearlybtn.style.background = "linear-gradient(135deg,#db2777,#f59e0b)";
+        yearlybtn.style.color = "#fff";
+        monthlybtn.style.background = "linear-gradient(135deg,#db2777,#f59e0b)";
+        monthlybtn.style.backgroundClip = "text";
+        monthlybtn.style.color = "transparent";
+      }
+    </script>
+
+    <script src="/node_modules/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script
+      src="https://kit.fontawesome.com/f44e101240.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      AOS.init({ duration: 3000, delay: 40 });
+    </script>
+  </body>
+</html>
